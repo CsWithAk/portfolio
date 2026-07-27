@@ -6,11 +6,12 @@
     <title>Thank You | Amit Kumar</title>
 
     <!-- Google Font -->
+    <link rel="icon" href="https://uploads.onecompiler.io/437pmbpya/1784997619776/Amit_Img%5B1%5D.jpg" style="border-radius: 50%" size="32*32" type="image/x-icon">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <style>
         *{
@@ -188,59 +189,66 @@
 </head>
 
 <body>
+    <div class="container">
+        <div class="success-icon">
+            <i class="fas fa-check"></i>
+        </div>
+        <h1>Thank You!</h1>
+        <div class="divider"></div>
+        <p>
+            Your message has been received successfully.
+            Thank you for taking the time to reach out.
+            I truly appreciate your interest in my work and will respond to your
+            message as soon as possible.
+        </p>
+        <div class="buttons">
+            <a href="#" class="btn primary" onclick="goToPage(event)"> <!-- Link will bw added by JavaScript -->
+                <i class="fas fa-home"></i> Back to Portfolio
+            </a>
 
-<div class="container">
+            <a href="index.html#contact" class="btn secondary">
+                <i class="fas fa-paper-plane"></i> Send Another Message
+            </a>
+        </div>
 
-    <div class="success-icon">
-        <i class="fas fa-check"></i>
+        <!-- Social Links -->
+        <div class="socials">
+            <a href="https://www.researchgate.net/profile/Amit-Kumar-1039" target="_blank"><i class="fab fa-researchgate"></i></a>
+            <a href="https://scholar.google.com/citations?user=viy7zPkAAAAJ&hl=en" target="_blank" class="profile-btn"><i class="fas fa-graduation-cap"></i></a>
+            <a href="https://github.com/CsWithAk" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/cswithak/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.youtube.com/@CsWithAk"><i class="fab fa-youtube"></i></a>
+            <a href="https://x.com/CsWithAk"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/cswithak"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com/cswithak"><i class="fab fa-facebook"></i></a>
+            <a href="mailto:amitkumarmjl22@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+
+        <!-- footer section -->
+        <footer>
+            © 2026 Amit Kumar | All Rights Reserved | CsWithAk
+        </footer>
     </div>
+<!-- button JavaScript for two web pages-->
+    <script>
+    async function goToPage(event) {
+        event.preventDefault();
 
-    <h1>Thank You!</h1>
+        const firstLink = "index.html";
+        const secondLink = "https://cswithak.github.io/portfolio/";
 
-    <div class="divider"></div>
+        try {
+            const response = await fetch(firstLink, { method: "HEAD" });
 
-    <p>
-        Your message has been received successfully.
-        Thank you for taking the time to reach out.
-        I truly appreciate your interest in my work and will respond to your
-        message as soon as possible.
-    </p>
-
-    <div class="buttons">
-        <a href="index.html" class="btn primary">
-            <i class="fas fa-home"></i> Back to Portfolio
-        </a>
-
-        <a href="index.html#contact" class="btn secondary">
-            <i class="fas fa-paper-plane"></i> Send Another Message
-        </a>
-    </div>
-
-    <div class="socials">
-
-        <a href="https://github.com/CsWithAk" target="_blank">
-            <i class="fab fa-github"></i>
-        </a>
-
-        <a href="https://www.linkedin.com/in/cswithak/" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
-        </a>
-
-        <a href="https://www.researchgate.net/profile/Amit-Kumar-1039" target="_blank">
-            <i class="fab fa-researchgate"></i>
-        </a>
-
-        <a href="mailto:amitkumarmjl22@gmail.com">
-            <i class="fas fa-envelope"></i>
-        </a>
-
-    </div>
-
-    <footer>
-        © 2026 Amit Kumar. All Rights Reserved.
-    </footer>
-
-</div>
-
+            if (response.ok) {
+                window.location.href = firstLink;
+            } else {
+                window.location.href = secondLink;
+            }
+        } catch (error) {
+            window.location.href = secondLink;
+        }
+    }
+    </script>
 </body>
 </html>
