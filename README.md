@@ -4,7 +4,7 @@
 A modern, responsive personal portfolio website showcasing my skills, education, projects, internships, and professional journey as a Computer Science Engineering student.
 
 <p align="center">
-  <a href="https://portfolio-cswithak.vercel.app">
+  <a href="https://portfolio-zeta-ruby-3isrln5jq9.vercel.app">
     <img src="https://img.shields.io/badge/Live%20Portfolio-Visit%20Website-6c63ff?style=for-the-badge" alt="Live Portfolio">
   </a>
   <a href="https://github.com/CsWithAk/portfolio">
@@ -151,7 +151,7 @@ Computer Science Engineering Student
 Interested in Software Development, Data Science, and Artificial Intelligence.
 
 - GitHub: [@CsWithAk](https://github.com/CsWithAk)
-- Portfolio: [portfolio-cswithak.vercel.app](https://portfolio-cswithak.vercel.app)
+- Portfolio: [portfolio-cswithak.vercel.app](https://portfolio-zeta-ruby-3isrln5jq9.vercel.app)
 
 ## License
 
